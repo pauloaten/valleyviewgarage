@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MOT, servicing &amp; repairs - Valley View Garage, Peasedown St. John, Bath</title>
+<meta name="description" content="Fixed price servicing, MOT testing, repairs, car sales. Valley View Garage, Peasedown St. John, Bath, Somerset BA2 8PF" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          franklin: ['"Libre Franklin"', '"Helvetica Neue"', 'helvetica', 'arial', 'sans-serif'],
+        },
+        colors: {
+          navy: '#132e62',
+          'navy-light': '#1a3d80',
+          red: '#d93434',
+          'red-dark': '#611313',
+          'gray-panel': '#f2f2f2',
+          body: '#333333',
+        },
+      }
+    }
+  }
+</script>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.66;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3, h4 {
+    color: #132e62;
+    font-weight: 700;
+  }
+  .btn {
+    display: inline-block;
+    background: linear-gradient(to bottom, #d93434, #611313);
+    border-radius: 28px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background 0.2s;
+  }
+  .btn:hover {
+    background: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  .service-card {
+    background-color: #f2f2f2;
+    min-height: 401px;
+    padding: 10px;
+    flex: 1;
+    min-width: 200px;
+  }
+  .service-card h3 {
+    color: #132e62;
+    font-weight: 700;
+    padding-top: 0.1em;
+    font-size: 1.1rem;
+  }
+  table#pricing {
+    border: 2px solid #132e62;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table#pricing td {
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #ddd;
+  }
+  table#pricing tr:last-child td {
+    border-bottom: none;
+  }
+  table#pricing tr:hover td {
+    background-color: #f5f5f5;
+  }
+  .site-title {
+    font-size: 3.25rem;
+    color: #132e62;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .site-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .site-description {
+    font-size: 1.25rem;
+    color: #132e62;
+    margin-top: 0.5rem;
+  }
+  .quality-cars-title {
+    font-size: 3.25rem;
+    color: #132e62;
+    font-weight: 700;
+  }
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .panel-content {
+    padding: 3rem 0;
+  }
+  #panel1 {
+    background-color: #f2f2f2;
+  }
+  .entry-title {
+    display: none;
+  }
+  .site-info {
+    display: none;
+  }
+  .site-header {
+    position: relative;
+  }
+  .custom-header-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .site-branding {
+    background: rgba(255,255,255,0.85);
+    padding: 1.5rem 0;
+  }
+  .site-branding .wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .four-col-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  @media (max-width: 768px) {
+    .four-col-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .site-title { font-size: 2rem; }
+    .quality-cars-title { font-size: 2rem; }
+  }
+  @media (max-width: 480px) {
+    .four-col-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+  @media (max-width: 600px) {
+    .two-col-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .service-card img {
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 100%;
+    height: auto;
+  }
+  .text-center { text-align: center; }
+  .map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    display: block;
+  }
+  footer {
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 1.5rem 0;
+  }
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  footer a {
+    color: #132e62;
+    text-decoration: none;
+  }
+  footer a:hover { text-decoration: underline; }
+  .pcaweb-link em { font-style: italic; }
+  .pcaweb-link strong { font-weight: 700; }
+  h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+  h2:first-child { margin-top: 0; }
+  .entry-content p { margin: 0 0 1rem; }
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+</style>
+</head>
+<body>
+<div id="page">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- HEADER -->
+  <header id="masthead" class="site-header">
+    <div class="custom-header">
+      <div class="custom-header-media">
+        <img
+          src="https://www.valleyviewgarage.co.uk/wp-content/uploads/sites/8/2017/03/cropped-valleyview-hero-old.jpg"
+          width="2000"
+          height="1199"
+          alt="Valley View Garage hero image"
+          srcset="
+            https://www.valleyviewgarage.co.uk/wp-content/uploads/2017/03/cropped-valleyview-hero-old-300x180.jpg 300w,
+            https://www.valleyviewgarage.co.uk/wp-content/uploads/2017/03/cropped-valleyview-hero-old-768x460.jpg 768w,
+            https://www.valleyviewgarage.co.uk/wp-content/uploads/2017/03/cropped-valleyview-hero-old-1024x614.jpg 1024w,
+            https://www.valleyviewgarage.co.uk/wp-content/uploads/2017/03/cropped-valleyview-hero-old.jpg 2000w
+          "
+          sizes="100vw"
+        />
+      </div>
+      <div class="site-branding">
+        <div class="wrap">
+          <div class="site-branding-text">
+            <h1 class="site-title"><a href="/" rel="home">Valley View Garage</a></h1>
+            <p class="site-description">Dunkerton Hill, Peasedown St. John, Bath BA2 8PF | Call Us: 01761 420212</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div id="content">
+    <div id="primary">
+      <main id="main">
+
+        <!-- PANEL: Main content -->
+        <article>
+          <div class="panel-content">
+            <div class="wrap">
+              <div class="entry-content">
+
+                <h2>Valley View Garage MOT &amp; Test Centre</h2>
+                <p>For MOT testing, fixed price servicing, repairs and sales.</p>
+
+                <!-- 4-column service grid -->
+                <div class="four-col-grid">
+                  <div class="service-card">
+                    <img
+                      src="https://www.valleyviewgarage.co.uk/wp-content/uploads/sites/8/2017/03/valleyview708-6-300x300.jpg"
+                      alt="Valley View Garage - MOT service bay"
+                      width="300"
+                      height="300"
+                    />
+                    <h3>FIXED-PRICE SERVICING</h3>
+                    <p>See our fixed price servicing options below.</p>
+                  </div>
+                  <div class="service-card">
+                    <img
+                      src="https://www.valleyviewgarage.co.uk/wp-content/uploads/sites/8/2017/03/valleyview708-5-300x300.jpg"
+                      alt="Valley View Garage - MOT service bay"
+                      width="300"
+                      height="300"
+                    />
+                    <h3>MOT TEST STATION</h3>
+                    <p>Petrol and Diesel vehicles tested.</p>
+                  </div>
+                  <div class="service-card">
+                    <img
+                      src="https://www.valleyviewgarage.co.uk/wp-content/uploads/sites/8/2017/03/valleyview708-1-300x300.jpg"
+                      alt="Valley View Garage - MOT service bay"
+                      width="300"
+                      height="300"
+                    />
+                    <h3>VEHICLE REPAIRS</h3>
+                    <p>Modern well-equipped workshop.</p>
+                  </div>
+                  <div class="service-card">
+                    <img
+                      src="https://www.valleyviewgarage.co.uk/wp-content/uploads/sites/8/2017/03/valleyview708-4-300x300.jpg"
+                      alt="Valley View Garage - Car Sales"
+                      width="300"
+                      height="300"
+                    />
+                    <h3>CARS BOUGHT &amp; SOLD</h3>
+                    <p>Quality cars bought &amp; sold. See below for more details.</p>
+                  </div>
+                </div>
+
+                <p class="text-center" style="margin: 1.5rem 0;">
+                  <a class="btn" href="tel:01761420212">Call Us: 01761 420212</a>
+                </p>
+
+                <!-- Pricing table -->
+                <h2>Fixed Price Servicing</h2>
+                <table id="pricing">
+                  <tbody>
+                    <tr>
+                      <td>INTERIM SERVICE</td>
+                      <td>£ 129.00 *</td>
+                      <td>Inclusive of labour, parts &amp; VAT</td>
+                    </tr>
+                    <tr>
+                      <td>FULL SERVICE</td>
+                      <td>£ 189.00 *</td>
+                      <td>Inclusive of labour, parts &amp; VAT</td>
+                    </tr>
+                    <tr>
+                      <td>MAJOR SERVICE</td>
+                      <td>£ 249.00 *</td>
+                      <td>Inclusive of labour, parts &amp; VAT</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p style="margin-top: 1rem;">
+                  Please call us for all combined MOT &amp; Service deals.<br />
+                  * These costs are applicable for most 4-cylinder makes and models. A supplement may be added for specialist oils and/or parts where appropriate.
+                </p>
+
+                <p class="text-center" style="margin: 1.5rem 0;">
+                  <a class="btn" href="tel:01761420212">Call Us: 01761 420212</a>
+                </p>
+
+                <!-- Icon grid image -->
+                <p>
+                  <img
+                    src="https://www.valleyviewgarage.co.uk/wp-content/uploads/sites/8/2017/03/vview-icon-grid.jpg"
+                    alt=""
+                    style="display:block; margin: 0 auto; max-width: 100%; height: auto;"
+                    width="1576"
+                    height="614"
+                    srcset="
+                      https://www.valleyviewgarage.co.uk/wp-content/uploads/2017/03/vview-icon-grid-300x117.jpg 300w,
+                      https://www.valleyviewgarage.co.uk/wp-content/uploads/2017/03/vview-icon-grid-768x299.jpg 768w,
+                      https://www.valleyviewgarage.co.uk/wp-content/uploads/2017/03/vview-icon-grid-1024x399.jpg 1024w,
+                      https://www.valleyviewgarage.co.uk/wp-content/uploads/2017/03/vview-icon-grid.jpg 1576w
+                    "
+                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, 580px"
+                  />
+                </p>
+
+                <!-- Quality cars section -->
+                <h2 class="quality-cars-title">Quality Cars Bought &amp; Sold</h2>
+                <p>Looking to sell your car? Call us with your registration, make and model and we'll provide a valuation over the phone (all final valuations subject to inspection at our premises).</p>
+
+                <p class="text-center" style="margin: 1.5rem 0;">
+                  <a class="btn" href="tel:01761420212">Call Us: 01761 420212</a>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PANEL: Contact -->
+        <article id="panel1">
+          <div class="panel-content">
+            <div class="wrap">
+              <div class="entry-content">
+
+                <h2>Contact Us</h2>
+
+                <div class="two-col-grid">
+                  <div>
+                    <p>
+                      <strong>Valley View Garage</strong><br />
+                      Dunkerton Hill<br />
+                      Peasedown St. John<br />
+                      Bath<br />
+                      Somerset<br />
+                      BA2 8PF
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      <strong>Telephone</strong>: <a href="tel:01761420212">01761 420212</a><br />
+                      <strong>Email</strong>: <a href="mailto:info@valleyviewgarage.co.uk">info@valleyviewgarage.co.uk</a>
+                    </p>
+                    <p>
+                      <strong>Opening Times</strong><br />
+                      Mon &ndash; Fri 8:00am &ndash; 5:00pm<br />
+                      Saturday mornings &ndash; by appointment<br />
+                      Special thanks to Cleevewood Accountancy<br />
+                      &ndash; for all your accountancy needs.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="map-container" style="margin-top: 1.5rem;">
+                  <iframe
+                    loading="lazy"
+                    src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=ba2+8pf(Valley+View+Garage)&amp;ie=UTF8&amp;z=12&amp;t=m&amp;iwloc=near&amp;output=embed"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Valley View Garage location map"
+                  ></iframe>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="colophon">
+    <div class="wrap">
+      <span>&copy; Valley View Garage. All Rights Reserved.</span>
+      <a class="pcaweb-link" href="http://pcaWeb.io" target="_blank" rel="noopener" title="website design by pcaWeb.io">
+        Website Design By <em>pca</em><strong>Web</strong>
+      </a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
