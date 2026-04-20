@@ -73,7 +73,7 @@ export default function ValleyViewGarage() {
             alt=""
             srcSet="/images/hero-300w.jpg 300w, /images/hero-768w.jpg 768w, /images/hero-1024w.jpg 1024w, /images/hero.jpg 2000w"
             sizes="100vw"
-            className="w-full h-auto block max-h-[600px] object-cover object-center"
+            className="w-full block h-screen object-cover object-center"
           />
         </div>
 
