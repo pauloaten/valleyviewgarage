@@ -119,7 +119,7 @@ export default function ValleyViewGarage() {
                       alt={s.alt}
                       width={300}
                       height={300}
-                      className="block mx-auto mb-2 max-w-full h-auto"
+                      loading="lazy" className="block mx-auto mb-2 max-w-full h-auto"
                     />
                     <h3 className="text-[#132e62] font-bold pt-[0.1em] text-[1.1rem]">
                       {s.title}
@@ -178,7 +178,7 @@ export default function ValleyViewGarage() {
                   width={1576}
                   height={614}
                   srcSet="/images/icon-grid-300w.jpg 300w, /images/icon-grid-768w.jpg 768w, /images/icon-grid-1024w.jpg 1024w, /images/icon-grid.jpg 1576w"
-                  sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, 580px"
+                  loading="lazy" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, 580px"
                   className="block mx-auto max-w-full h-auto"
                 />
               </p>
