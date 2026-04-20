@@ -203,6 +203,61 @@ export default function ValleyViewGarage() {
           </div>
         </article>
 
+
+        {/* Panel: FAQ */}
+        <article>
+          <div className="py-12">
+            <div className="max-w-[960px] mx-auto px-6">
+
+              <h2 className="text-[#132e62] font-bold text-2xl mb-6">Frequently Asked Questions</h2>
+
+              <div className="space-y-6">
+
+                <div>
+                  <h3 className="text-[#132e62] font-bold text-lg mb-1">Do you carry out MOT tests?</h3>
+                  <p>Yes. Valley View Garage is an MOT test station for petrol and diesel vehicles. Call us on 01761 420212 to book your MOT.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-[#132e62] font-bold text-lg mb-1">How much does an MOT cost?</h3>
+                  <p>Please call us on 01761 420212 for current MOT pricing. We also offer combined MOT and service deals — call for details.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-[#132e62] font-bold text-lg mb-1">What are your fixed service prices?</h3>
+                  <p>Our fixed-price servicing starts from £129 for an Interim Service, £189 for a Full Service, and £249 for a Major Service — all inclusive of labour, parts and VAT. Prices apply to most 4-cylinder vehicles; a supplement may apply for specialist oils or parts.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-[#132e62] font-bold text-lg mb-1">What types of vehicle do you service and repair?</h3>
+                  <p>We service and repair most makes and models of petrol and diesel cars. Call us with your vehicle details and we&apos;ll confirm we can help.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-[#132e62] font-bold text-lg mb-1">Do you buy and sell cars?</h3>
+                  <p>Yes. We buy and sell quality used cars. If you&apos;re looking to sell, call us with your registration, make and model for a phone valuation — all final valuations are subject to inspection at our premises.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-[#132e62] font-bold text-lg mb-1">Where are you located?</h3>
+                  <p>We&apos;re on Dunkerton Hill, Peasedown St. John, Bath BA2 8PF — a short drive from Radstock, Midsomer Norton, and central Bath.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-[#132e62] font-bold text-lg mb-1">What are your opening hours?</h3>
+                  <p>Monday to Friday, 8:00am to 5:00pm. We also open Saturday mornings by appointment — call 01761 420212 to arrange.</p>
+                </div>
+
+                <div>
+                  <h3 className="text-[#132e62] font-bold text-lg mb-1">How do I book?</h3>
+                  <p>Just give us a call on 01761 420212. We don&apos;t have an online booking system — a quick call is the fastest way to get booked in.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+
         {/* Panel 2: Contact — grey background */}
         <article id="panel1" className="bg-[#f2f2f2]">
           <div className="py-12">
