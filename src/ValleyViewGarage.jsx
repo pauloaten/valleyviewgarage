@@ -236,8 +236,8 @@ export default function ValleyViewGarage() {
                     </a>
                     <br />
                     <strong>Email</strong>:{" "}
-                    <a href="mailto:info@valleyviewgarage.co.uk" className="text-[#132e62]">
-                      info@valleyviewgarage.co.uk
+                    <a href="mailto:valleyviewgarage@yahoo.co.uk" className="text-[#132e62]">
+                      valleyviewgarage@yahoo.co.uk
                     </a>
                   </p>
                   <p>
@@ -277,16 +277,7 @@ export default function ValleyViewGarage() {
       <footer id="colophon" className="border-t border-gray-200 py-6">
         <div className="max-w-[960px] mx-auto px-6 flex flex-wrap justify-between items-center gap-4">
           <span>&copy; Valley View Garage. All Rights Reserved.</span>
-          <a
-            href="http://pcaWeb.io"
-            target="_blank"
-            rel="noopener"
-            title="website design by pcaWeb.io"
-            className="text-[#132e62] no-underline hover:underline"
-          >
-            Website Design By <em>pca</em>
-            <strong>Web</strong>
-          </a>
+          <span>Website Design By <em>pca</em><strong>Web</strong></span>
         </div>
       </footer>
 
