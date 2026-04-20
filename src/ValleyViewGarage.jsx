@@ -1,35 +1,26 @@
 import React from "react";
 
-// ─── Tailwind config note ────────────────────────────────────────────────────
-// Add to tailwind.config.js:
-//   theme: { extend: { fontFamily: { franklin: ['"Libre Franklin"', ...] } } }
-// Add to index.html <head>:
-//   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400&display=swap" rel="stylesheet" />
-// ─────────────────────────────────────────────────────────────────────────────
-
-const WP = "https://www.valleyviewgarage.co.uk/wp-content/uploads";
-
 const SERVICES = [
   {
-    img: `${WP}/sites/8/2017/03/valleyview708-6-300x300.jpg`,
+    img: "/images/service-servicing.jpg",
     alt: "Valley View Garage - Fixed price servicing",
     title: "FIXED-PRICE SERVICING",
     desc: "See our fixed price servicing options below.",
   },
   {
-    img: `${WP}/sites/8/2017/03/valleyview708-5-300x300.jpg`,
+    img: "/images/service-mot.jpg",
     alt: "Valley View Garage - MOT service bay",
     title: "MOT TEST STATION",
     desc: "Petrol and Diesel vehicles tested.",
   },
   {
-    img: `${WP}/sites/8/2017/03/valleyview708-1-300x300.jpg`,
+    img: "/images/service-repairs.jpg",
     alt: "Valley View Garage - Vehicle repairs",
     title: "VEHICLE REPAIRS",
     desc: "Modern well-equipped workshop.",
   },
   {
-    img: `${WP}/sites/8/2017/03/valleyview708-4-300x300.jpg`,
+    img: "/images/service-cars.jpg",
     alt: "Valley View Garage - Car Sales",
     title: "CARS BOUGHT & SOLD",
     desc: "Quality cars bought & sold. See below for more details.",
@@ -76,16 +67,11 @@ export default function ValleyViewGarage() {
         {/* Hero image */}
         <div>
           <img
-            src={`${WP}/sites/8/2017/03/cropped-valleyview-hero-old.jpg`}
+            src="/images/hero.jpg"
             width={2000}
             height={1199}
             alt=""
-            srcSet={`
-              ${WP}/2017/03/cropped-valleyview-hero-old-300x180.jpg 300w,
-              ${WP}/2017/03/cropped-valleyview-hero-old-768x460.jpg 768w,
-              ${WP}/2017/03/cropped-valleyview-hero-old-1024x614.jpg 1024w,
-              ${WP}/2017/03/cropped-valleyview-hero-old.jpg 2000w
-            `}
+            srcSet="/images/hero-300w.jpg 300w, /images/hero-768w.jpg 768w, /images/hero-1024w.jpg 1024w, /images/hero.jpg 2000w"
             sizes="100vw"
             className="w-full h-auto block max-h-[600px] object-cover object-center"
           />
@@ -187,16 +173,11 @@ export default function ValleyViewGarage() {
               {/* Icon grid */}
               <p>
                 <img
-                  src={`${WP}/sites/8/2017/03/vview-icon-grid.jpg`}
+                  src="/images/icon-grid.jpg"
                   alt=""
                   width={1576}
                   height={614}
-                  srcSet={`
-                    ${WP}/2017/03/vview-icon-grid-300x117.jpg 300w,
-                    ${WP}/2017/03/vview-icon-grid-768x299.jpg 768w,
-                    ${WP}/2017/03/vview-icon-grid-1024x399.jpg 1024w,
-                    ${WP}/2017/03/vview-icon-grid.jpg 1576w
-                  `}
+                  srcSet="/images/icon-grid-300w.jpg 300w, /images/icon-grid-768w.jpg 768w, /images/icon-grid-1024w.jpg 1024w, /images/icon-grid.jpg 1576w"
                   sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, 580px"
                   className="block mx-auto max-w-full h-auto"
                 />
