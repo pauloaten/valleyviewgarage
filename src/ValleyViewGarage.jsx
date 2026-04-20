@@ -65,30 +65,28 @@ export default function ValleyViewGarage() {
       {/* ── HEADER ─────────────────────────────────────────────────────────── */}
       <header id="masthead" className="relative">
         {/* Hero image */}
-        <div>
-          <img
-            src="/images/hero.jpg"
-            width={2000}
-            height={1199}
-            alt=""
-            srcSet="/images/hero-300w.jpg 300w, /images/hero-768w.jpg 768w, /images/hero-1024w.jpg 1024w, /images/hero.jpg 2000w"
-            sizes="100vw"
-            className="w-full block h-screen object-cover object-center"
-          />
-        </div>
+        <img
+          src="/images/hero.jpg"
+          width={2000}
+          height={1199}
+          alt=""
+          srcSet="/images/hero-300w.jpg 300w, /images/hero-768w.jpg 768w, /images/hero-1024w.jpg 1024w, /images/hero.jpg 2000w"
+          sizes="100vw"
+          className="w-full block h-screen object-cover object-center"
+        />
 
-        {/* Site branding bar */}
-        <div className="bg-white/85 py-6">
+        {/* Site branding bar — overlaid at bottom of hero */}
+        <div className="absolute bottom-0 left-0 right-0 py-6" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.55), transparent)" }}>
           <div className="max-w-[960px] mx-auto px-6">
             <h1
-              className="font-bold text-[#132e62] leading-tight"
+              className="font-bold text-white leading-tight"
               style={{ fontSize: "3.25rem" }}
             >
-              <a href="/" rel="home" className="text-[#132e62] no-underline">
+              <a href="/" rel="home" className="text-white no-underline">
                 Valley View Garage
               </a>
             </h1>
-            <p className="text-[#132e62] text-xl mt-2">
+            <p className="text-white text-xl mt-2">
               Dunkerton Hill, Peasedown St. John, Bath BA2 8PF | Call Us: 01761 420212
             </p>
           </div>
